@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Toyotahilux.css">
+    <title>Toyota pirus</title>
+   
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app - NUEVA  TOYOTA HILUX 2025, ESTRENA FACELIFT Y MECANICA HIBRIDA, ENTERATE DE TODOS LOS DETALLES!.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Toyota Hilux</h1>
+            <p>La Toyota Hilux una camioneta pickup robusta y confiable, famosa por su durabilidad y capacidad todoterreno. Es la elección ideal tanto para trabajo duro como para aventuras.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2> Inquebrantable, lista para cualquier desafío</h2>
+        <p>a Toyota Hilux enfatiza su durabilidad y resistencia, posicionándola como una camioneta capaz de enfrentar cualquier desafío, ya sea en el trabajo o en aventuras extremas. Es un símbolo de fuerza y fiabilidad. </p>
+        <img src="imagenes/Toyota-HiLux-Revo-BEV-Concept-vehicle-0050-1024x682.jpeg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/motor.jpg" alt="Power Icon">
+            <h3>Capacidad Todoterreno</h3>
+            <p>Tracción en las cuatro ruedas y suspensión reforzada.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/diseño interior.jpg" alt="Hybrid Icon">
+            <h3>Durabilidad</h3>
+            <p>Construcción resistente para soportar condiciones extremas.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/sistemas de seguirdad.jpeg" alt="Design Icon">
+            <h3>Versatilidad</h3>
+            <p>Amplia capacidad de carga y opciones de cabina. </p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Potencia</h4>
+                <p>1000 CV</p>
+            </div>
+            <div class="spec">
+                <h4>Capacidad de Carga</h4>
+                <p>Capacidad del maletero: 255 litros (ampliable hasta 1,010 litros con los asientos traseros abatidos).</p>
+            </div>
+            <div class="spec">
+                <h4>Suspensión y Frenos</h4>
+                <p>Suspensión delantera: Independiente tipo McPherson.
+                    Suspensión trasera: Eje de torsión.
+            </div>
+            <div class="spec">
+                <h4>Motor</h4>
+                <p>V8 Turbo + 3 Motores Eléctricos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

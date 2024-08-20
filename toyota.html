@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toyota.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selección de Autos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+            </div>
+              <!-- Inicia nav -->
+<nav id="menu" style="left: 15%; position: absolute;">
+    <!-- Inicia menu -->
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Marcas</a>
+            <!-- Inicia menu desplegable -->
+            <ul>
+                <li><a href="kia.html">KIA</a></li>
+                <li><a href="toyota.html">TOYOTA</a></li>
+            </ul>
+            <!-- final menu desplegable -->
+        </li>
+        <!-- final menu -->
+    </ul>
+</nav>
+<!-- final nav -->
+           
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-selection">
+            <h2>Selecciona tu Auto</h2>
+            <div class="car-grid">
+                <div class="car-item">
+                    <img src="imagenes/toyotarojo.png" alt="Toyota Hilux">
+                    <h3><a href="Toyotahilux.html" style="font-size: 33px;">Toyota Hilux</a></h3>
+                    <a style="font-size: 21px;">ASD</a>
+                </div>
+                <div class="car-item">
+                    <img src="imagenes/kia-ceed-sw7-cover-779x447.png" alt="Toyota Corolla">
+                    <h3><a href="toyotacorolla.html" style="font-size: 33px;">Toyota Corolla</a></h3>
+                    <a style="font-size: 21px;">ASD</a>
+                </div>
+                <div class="car-item">
+                    <img src="imagenes/hero-kia-soluto.png" alt="Toyota Mirai">
+                    <h3><a href="toyotamirai.html" style="font-size: 33px;">Toyota Mirai</a></h3>
+                    <a style="font-size: 21px;">ASD</a>
+                </div>
+                <div class="car-item">
+                    <img src="imagenes/PICANTO-1.png" alt="Toyota Crown">
+                    <h3><a href="toyotacrown.html" style="font-size: 33px;">Toyota Crown</a></h3>
+                    <a style="font-size: 21px;">ASD</a>
+                </div>
+                <div class="car-item">
+                    <img src="imagenes/450_1000.jpeg" alt="Toyota Prius">
+                    <h3><a href="toyotaprius.html" style="font-size: 33px;">Toyota Prius</a></h3>
+                    <a style="font-size: 21px;">ASD</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Redes Sociales</h3>
+                <a href="#">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Instagram</a><br>
+            </div>
+            <div>
+                <h3>Contact Information</h3>
+                <p>Phone: +1 234 567 890</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div>
+                <h3>© 2023 Nombre de tu Empresa. Todos los derechos reservados.</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Agregar animaciones con Anime.js
+        anime({
+            targets: '.car-item',
+            translateY: [100, 0],
+            opacity: [0, 1],
+            delay: anime.stagger(100, { start: 500 }),
+            easing: 'easeOutElastic',
+            duration: 1000
+        });
+
+        // Animar elementos de navegación
+        anime({
+            targets: '.nav-links a',
+            opacity: [0, 1],
+            translateY: [-20, 0],
+            delay: anime.stagger(100, { start: 1000 }),
+            easing: 'easeOutQuad'
+        });
+
+        // Animar el título principal
+        anime({
+            targets: 'h2',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            duration: 1500,
+            easing: 'easeOutElastic'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kianiro.css">
+    <title>Kia niro</title>
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app-2025 KIA Niro Unveiled - The Perfect Choice Of Family SUV !!.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Kia niro</h1>
+            <p>El Kia Niro es un crossover híbrido compacto que combina eficiencia de combustible con un diseño moderno y práctico. Es ideal para quienes buscan un vehículo ecológico sin comprometer el estilo.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2> Eficiencia inteligente, para un mundo en movimiento </h2>
+        <p>La filosofía del Kia Niro de combinar eficiencia de combustible con tecnología inteligente. </p>
+        <img src="imagenes/NIRO-MAIN_i_0.jpg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/cq5dam.thumbnail.1353.900-copy-1024x682.png" alt="Power Icon">
+            <h3>Hibridación</h3>
+            <p> Motor híbrido que ofrece un gran ahorro de combustible.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/f.elconfidencial.com_original_b5a_e75_580_b5ae755800c1bf7e4ed1d67b08b17ae1.jpg" alt="Hybrid Icon">
+            <h3>Diseño Compacto</h3>
+            <p> Perfecto para la ciudad y viajes largos.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/718146.jpg" alt="Design Icon">
+            <h3>Espacio Interior</h3>
+            <p>A pesar de su tamaño, ofrece un espacio interior cómodo y versátil.</p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Motor Eléctrico</h4>
+                <p>Potencia: Aproximadamente 43 hp (32 kW).
+                    Batería: Ion-litio de 1.56 kWh.</p>
+            </div>
+            <div class="spec">
+                <h4>Rendimiento de Combustible</h4>
+                <p>Aproximadamente 22-24 km/l.</p>
+            </div>
+            <div class="spec">
+                <h4>Frenos</h4>
+                <p>Delanteros y Traseros: Discos ventilados.
+            </div>
+            <div class="spec">
+                <h4>Ruedas y Neumáticos</h4>
+                <p>Llantas: De 16 a 18 pulgadas.
+                    Neumáticos: De bajo consumo de energía.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

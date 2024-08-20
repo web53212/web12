@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kia picanto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #000;
+            color: #cfb53b;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            padding: 10px 30px;
+            background-color: #012158;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0;
+            transition: top 0.3s;
+        }
+
+        .logo {
+            flex: 1;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap:20px;   
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: #cfb53b;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #e10600;
+        }
+
+        nav a {
+            color: #cfb53b;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e10600;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #cfb53b;
+            z-index: 1;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            max-width: 600px;
+            z-index: 1;
+        }
+
+        .content-section {
+            padding: 80px 30px;
+            text-align: center;
+            background-color: #012158;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #cfb53b;
+            margin-bottom: 20px;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #cfb53b;
+        }
+
+        .content-section img {
+            width: 100%;
+            max-width: 900px;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content-section img:hover {
+            transform: scale(1.03);
+        }
+
+        .features-section {
+            background-color: #cfb53b;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .features-section h2 {
+            font-size: 2.2rem;
+            color: #012158;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            vertical-align: top;
+        }
+
+        .feature img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #012158;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            color: #012158;
+        }
+
+        .specs-section {
+            padding: 60px 30px;
+            background-color: #012158;
+            text-align: center;
+        }
+
+        .specs-section h2 {
+            font-size: 2.5rem;
+            color: #cfb53b;
+            margin-bottom: 30px;
+        }
+
+        .specs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .spec {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: left;
+            color: #cfb53b;
+        }
+
+        .spec h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #cfb53b;
+        }
+
+        .spec p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="C:\Users\ASUS\Desktop\vainas para expo\imagenes\Diseño sin título (3).png" alt="Logo">
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="#">Toyota</a>
+                    <a href="#">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="#"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="C:\Users\ASUS\Downloads\Y2meta.app-First Look ! Unveiling the 2025  Kia Picanto_ What's New_.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Kia Picanto</h1>
+            <p>El Kia Picanto 2025 es un compacto urbano que combina diseño moderno, eficiencia y tecnología avanzada.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2> Compacto en tamaño, grande en posibilidades.</h2>
+        <p>El Kia Picanto 2025 es mucho más que un simple auto urbano; es la puerta de entrada a una vida llena de oportunidades.   </p>
+        <img src="C:\Users\ASUS\Downloads\Kia-Picanto-Sport-0046-1024x621.jpg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="C:\Users\ASUS\Downloads\motor.jpg" alt="Power Icon" font-size="20px">
+            <h3>Motor efeciente</h3>
+            <p>Está disponible con opciones de motorización de bajo consumo, incluyendo motores de gasolina y opciones híbridas ligeras, ideales para la conducción en ciudad.</p>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\ASUS\Downloads\diseño interior.jpg" alt="Hybrid Icon">
+            <h3>Tecnología Interior</h3>
+            <p>El interior cuenta con una pantalla táctil de alta definición que soporta Apple CarPlay y Android Auto, además de sistemas de navegación y conectividad avanzada.</p>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\ASUS\Downloads\sistemas de seguirdad.jpeg" alt="Design Icon">
+            <h3>Sistemas de Seguridad</h3>
+            <p>Viene equipado con múltiples airbags, frenado automático de emergencia, asistencia de mantenimiento de carril, y control de crucero adaptativo, aumentando la seguridad tanto en ciudad como en carretera.</p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Potencia</h4>
+                <p>1000 CV</p>
+            </div>
+            <div class="spec">
+                <h4>Capacidad de Carga</h4>
+                <p>Capacidad del maletero: 255 litros (ampliable hasta 1,010 litros con los asientos traseros abatidos).</p>
+            </div>
+            <div class="spec">
+                <h4>Suspensión y Frenos</h4>
+                <p>Suspensión delantera: Independiente tipo McPherson.
+                    Suspensión trasera: Eje de torsión.
+            </div>
+            <div class="spec">
+                <h4>Motor</h4>
+                <p>V8 Turbo + 3 Motores Eléctricos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

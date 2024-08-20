@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kiaceed.css">
+    <title>Kia ceed</title>
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app-New Kia Ceed 2025 Is It the Best Yet Discover the Hidden Upgrades!.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Kia Ceed</h1>
+            <p>El Kia Ceed es un hatchback compacto diseñado para ofrecer un manejo ágil y eficiente. Con un estilo europeo y una tecnología avanzada, es perfecto para la vida urbana moderna.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2> Diseño europeo, espíritu innovador</h2>
+        <p>el estilo sofisticado del Kia Ceed, influenciado por el diseño europeo, y su enfoque en la innovación.</p>
+        <img src="imagenes/asi-sera-el-nuevo-kia-ceed-primer-adelanto-de-la-proxima-generacion-del-compacto.jpeg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/portada.jpeg" alt="Power Icon">
+            <h3>Diseño Moderno</h3>
+            <p>Estilo dinámico y atractivo, con un enfoque en la practicidad.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/kia-ceed-1-5-t-gdi-gt-line-test-2021_15-nestandard1.jpg" alt="Hybrid Icon">
+            <h3>Motores Eficientes</h3>
+            <p>Opciones de motores pequeños y eficientes, incluyendo versiones híbridas ligeras.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/kia-k4-2024-002_1_1000x575.jpeg"alt="Design Icon">
+            <h3>Tecnología</h3>
+            <p>Pantalla táctil, conectividad completa, y asistencias al conductor.</p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Motor de Combustión Interna</h4>
+                <p>Tipo: 3 o 4 cilindros en línea, dependiendo de la versión.
+                    Desplazamiento: 1.0 a 1.6 litros.</p>
+            </div>
+            <div class="spec">
+                <h4>Transmisión</h4>
+                <p>Manual de 6 velocidades, automática de 7 velocidades o doble embrague (DCT).</p>
+            </div>
+            <div class="spec">
+                <h4>Rendimiento de Combustible</h4>
+                <p>Aproximadamente 16-20 km/l, dependiendo del motor y las condiciones.
+            </div>
+            <div class="spec">
+                <h4>Ruedas y Neumáticos</h4>
+                <p>Llantas: De 16 a 18 pulgadas.
+                    Neumáticos: De alto rendimiento, orientados al manejo urbano y carretera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Auplus inicio</title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes/Diseño sin título (3).png" alt="Logo">
+            </div>
+       <!-- Inicia nav -->
+<nav id="menu" style="left: 76%; position: absolute;">
+    <!-- Inicia menu -->
+    <ul>
+        <li><a href="#">Marcas</a>
+            <!-- Inicia menu desplegable -->
+            <ul>
+                <li><a href="kia.html">KIA</a></li>
+                <li><a href="toyota.html">TOYOTA</a></li>
+            </ul>
+            <!-- final menu desplegable -->
+        </li>
+        <!-- final menu -->
+    </ul>
+</nav>
+<!-- final nav -->
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="carousel-slide active">
+                <img src="imagenes/WhatsApp Image 2024-08-19 at 4.42.11 AM.jpeg" alt="Promoción de auto">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagenes/NIRO-MAIN_i_0.jpg" alt="Auto 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagenes/Toyota-HiLux-Revo-BEV-Concept-vehicle-0050-1024x682.jpeg" alt="Auto 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagenes/Kia-Picanto-Sport-0046-1024x621.jpg" alt="Auto 3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+        <section class="featured-cars">
+            <h2>Modelos Destacados</h2>
+            <div class="car-grid">
+                <div class="car-item">
+                    <section id="servicios" class="services">
+                        <div class="service-item">  
+                    <img src="imagenes/PICANTO-1.png" alt="Modelo 1">
+                    <h3><a href="kia.html">Kia Picanto</a></h3>
+                    <p>$25,000</p>
+                </div>
+                </div>
+
+                <div class="car-item">
+                    <section id="servicios" class="services">
+                <div class="service-item">
+                    <img src="imagenes/kia-ceed-sw7-cover-779x447.png" alt="Modelo 2">
+                    <h3><a href="kia.html">Kia Ceed</a></h3>
+                    <p>$30,000</p>
+                </div>
+                </div>
+                
+                <div class="car-item">
+                    <section id="servicios" class="services" >
+                     <div class="service-item" style="height: 207px;">                   
+                    <img src="imagenes/2a3480a8-9237-458d-9176-fb7d7c0596dd.png" alt="Modelo 3">
+                    <h3><a href="toyota.html">Toyota Crown</a></h3>
+                    <p>$45,000</p>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contáctanos</h3>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: contacto@concesionaria.com</p>
+                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            </div>
+            <div class="newsletter">
+                <h3>Suscríbete</h3>
+                <p>Recibe nuestras últimas noticias y ofertas especiales.</p>
+                <input type="email" placeholder="Tu email">
+                <button>Suscribirse</button>
+            </div>
+            <div class="social-media">
+                <h3>Síguenos</h3>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      
+        let slideIndex = 0;
+        let slideInterval;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("carousel-slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].classList.add("active");
+            slideInterval = setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+
+        function plusSlides(n) {
+            clearTimeout(slideInterval);
+            slideIndex += n - 1;
+            showSlides();
+        }
+
+        document.addEventListener("DOMContentLoaded", showSlides);
+
+        // Add animations with anime.js
+        document.addEventListener("DOMContentLoaded", function () {
+            anime({
+                targets: '.header',
+                translateY: [-100, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1000
+            });
+
+            anime({
+                targets: '.nav-links li',
+                translateY: [-50, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(200, {start: 1000}),
+                easing: 'easeOutExpo',
+                duration: 800
+            });
+
+            anime({
+                targets: '.carousel-slide img',
+                translateY: [20, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1000,
+                delay: 500
+            });
+
+            anime({
+                targets: '.featured-cars h2, .car-item',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1000,
+                delay: anime.stagger(200, {start: 1500})
+            });
+
+            anime({
+                targets: '.footer',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1000,
+                delay: 2000
+            });
+        });
+    </script>
+</body>
+</html>

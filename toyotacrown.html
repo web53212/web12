@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toyotacrown.css">
+    <title>Toyota Crown</title>
+   
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app-2024 Toyota Crown Overview _ Toyota.mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Toyota Crown</h1>
+            <p>El Toyota Crown es un sedán de lujo que combina elegancia y tecnología avanzada. Con una historia que se remonta a la década de 1950, es conocido por su comodidad, seguridad y rendimiento refinado.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2> Distinción y poder, redefiniendo la elegancia.</h2>
+        <p>Este lema destaca la esencia del Toyota Crown como un vehículo que no solo exuda elegancia, sino que también incorpora un rendimiento poderoso. </p>
+        <img src="imagenes/images (3).jpeg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/motor.jpg" alt="Power Icon">
+            <h3>Lujo y confort</h3>
+            <p>Asientos de cuero, sistema de sonido premium y amplio espacio interior.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/diseño interior.jpg" alt="Hybrid Icon">
+            <h3>Motorización Potente</h3>
+            <p>Opciones de motor V6 y tren motriz híbrido, ofreciendo un equilibrio entre rendimiento y eficiencia.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/sistemas de seguirdad.jpeg" alt="Design Icon">
+            <h3>Seguridad</h3>
+            <p>Incluye Toyota Safety Sense, con asistencia de mantenimiento de carril, control de crucero adaptativo y más.</p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Potencia</h4>
+                <p>1000 CV</p>
+            </div>
+            <div class="spec">
+                <h4>Capacidad de Carga</h4>
+                <p>Capacidad del maletero: 255 litros (ampliable hasta 1,010 litros con los asientos traseros abatidos).</p>
+            </div>
+            <div class="spec">
+                <h4>Suspensión y Frenos</h4>
+                <p>Suspensión delantera: Independiente tipo McPherson.
+                    Suspensión trasera: Eje de torsión.
+            </div>
+            <div class="spec">
+                <h4>Motor</h4>
+                <p>V8 Turbo + 3 Motores Eléctricos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

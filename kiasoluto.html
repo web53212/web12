@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kiasoluto.css">
+    <title>Kia soluto</title>
+  
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app-Kia Soluto 2024 _ Conoce los detalles en su diseño.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Kia Soluto</h1>
+            <p>El Kia Soluto es un sedán subcompacto asequible, ideal para quienes buscan un vehículo confiable y económico. Ofrece un buen balance entre precio, funcionalidad y confort.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2>Simplicidad que inspira confianza.</h2>
+        <p>Kia Soluto pone en valor su enfoque en la simplicidad y funcionalidad, lo que lo hace accesible y confiable para el día a día.</p>
+        <img src="imagenes/kia-soluto-exterior-rojo.jpg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/bmcsolutoext3.jpg" alt="Power Icon">
+            <h3>Economía de Combustible</h3>
+            <p> Motor pequeño que ofrece gran eficiencia..</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/7-kia-soluto-interior.jpg" alt="Hybrid Icon">
+            <h3>Confort</h3>
+            <p>Interior sencillo pero bien equipado con lo esencial.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/kia-ab-19my-wide-b-interior-03.jpg" alt="Design Icon">
+            <h3>Tecnología</h3>
+            <p>Sistema de infoentretenimiento con pantalla táctil y conectividad. </p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Motor de Combustión Interna</h4>
+                <p>Tipo: 4 cilindros en línea.
+                    Desplazamiento: 1.4 litros. CV</p>
+            </div>
+            <div class="spec">
+                <h4>Transmisión</h4>
+                <p>Tipo: Manual de 5 velocidades o automática de 4 velocidades.</p>
+            </div>
+            <div class="spec">
+                <h4>Suspensión</h4>
+                <p>SDelantera: Tipo McPherson.
+                    Trasera: Eje de torsión.
+            </div>
+            <div class="spec">
+                <h4>Capacidad del Tanque de Combustible</h4>
+                <p>Capacidad: Aproximadamente 43 litros/p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

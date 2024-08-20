@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kiastonic.css">
+    <title>Kia stonic</title>
+   
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app-Kia Stonic Style Edition _ Efficiency.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Kia stonic</h1>
+            <p>El Kia Stonic es un crossover compacto diseñado para la vida urbana, combinando estilo juvenil con tecnología avanzada. Es ágil, eficiente y ofrece un manejo divertido.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2> Estilo urbano, aventura en cada esquina</h2>
+        <p>Carácter juvenil y aventurero del Kia Stonic, diseñado para la vida en la ciudad pero con la capacidad de emprender aventuras más allá. </p>
+        <img src="imagenes/r0_0_4000_2667_w4000_h2667_fmax.jpg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/Kia-Stonic-hibrido-e1714255732130.jpg"alt="Power Icon">
+            <h3>Diseño Juvenil</h3>
+            <p>Estilo fresco y moderno, con opciones de personalización</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/Foto_Motor_1_0_T_MHEV_f3bda957fc.jpeg" alt="Hybrid Icon">
+            <h3>Eficiencia de Combustible</h3>
+            <p>Motores pequeños pero potentes, con versiones híbridas ligeras.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/Stonic_Interior_ce03d4e853.jpg" alt="Design Icon">
+            <h3>Tecnología</h3>
+            <p>Pantalla táctil con conectividad completa, incluyendo Apple CarPlay y Android Auto. </p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Motor de Combustión Interna</h4>
+                <p>Tipo: 3 o 4 cilindros en línea.
+                    Desplazamiento: 1.0 a 1.4 litros.</p>
+            </div>
+            <div class="spec">
+                <h4>Transmisión</h4>
+                <p>Tipo: Manual de 5 o 6 velocidades, o automática de 6 velocidades.</p>
+            </div>
+            <div class="spec">
+                <h4>Capacidad del Tanque de Combustible</h4>
+                <p>Aproximadamente 45 litros.
+            </div>
+            <div class="spec">
+                <h4>Rendimiento de Combustible</h4>
+                <p>Gasolina: Aproximadamente 18-20 km/l</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

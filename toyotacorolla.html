@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toyotacorolla.css">
+    <title>Toyota Corrolla</title>
+   
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app-2025 Toyota Corolla Unveiled - What Is Set It Apart _!.mp4"                                                                                                                                                                                                                                              type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>                                                                                           
+            <h1>Toyota Corrolla</h1>
+            <p>El Toyota Corolla es uno de los autos más vendidos del mundo, conocido por su fiabilidad, eficiencia y accesibilidad. Ofrece un equilibrio perfecto entre comodidad, economía y tecnología moderna.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2>Confiabilidad sin igual, para cada día y cada camino.</h2>
+        <p>La reputación del Toyota Corolla como un auto confiable, ideal para el uso diario y adaptable a diferentes caminos y circunstancias.</p>
+        <img src="imagenes/2025-toyota-corolla-fx-02-6660ca1bed1b2.jpg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/motor.jpg" alt="Power Icon">
+            <h3>Eficiencia de Combustible</h3>
+            <p>Motores de baja cilindrada y versiones híbridas.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/diseño interior.jpg" alt="Hybrid Icon">
+            <h3>Seguridad</h3>
+            <p>Toyota Safety Sense con frenado automático, asistencia de carril y más.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/sistemas de seguirdad.jpeg" alt="Design Icon">
+            <h3>Conectividad</h3>
+            <p> Sistema de infoentretenimiento con Apple CarPlay y Android Auto. </p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Potencia</h4>
+                <p>1000 CV</p>
+            </div>
+            <div class="spec">
+                <h4>Capacidad de Carga</h4>
+                <p>Capacidad del maletero: 255 litros (ampliable hasta 1,010 litros con los asientos traseros abatidos).</p>
+            </div>
+            <div class="spec">
+                <h4>Suspensión y Frenos</h4>
+                <p>Suspensión delantera: Independiente tipo McPherson.
+                    Suspensión trasera: Eje de torsión.
+            </div>
+            <div class="spec">
+                <h4>Motor</h4>
+                <p>V8 Turbo + 3 Motores Eléctricos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Autos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="kia.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+            </div>
+             <!-- Inicia nav -->
+<nav id="menu" style="left: 15%; position: absolute;">
+    <!-- Inicia menu -->
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Marcas</a>
+            <!-- Inicia menu desplegable -->
+            <ul>
+                <li><a href="kia.html">KIA</a></li>
+                <li><a href="toyota.html">TOYOTA</a></li>
+            </ul>
+            <!-- final menu desplegable -->
+        </li>
+        <!-- final menu -->
+    </ul>
+</nav>
+<!-- final nav -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button>Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-selection">
+            <h2>Selecciona tu Auto</h2>
+            <div class="car-grid">
+                <div class="car-item">
+                    <img src="imagenes/PICANTO-1.png" alt="Kia Picanto">
+                    <h3><a style="font-size: 33px;">Kia Picanto</a></h3>
+                    <a style="font-size: 21px;"><p>ASD</p></a>
+                    <div class="dropdown-button">
+                        <button onclick="toggleDropdown(this)">Versiones</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">
+                                <a href="kiapicanto.html" style="font-size: 16px;">Primera Generación</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="kiasoluto.html" style="font-size: 16px;">Segunda Generación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Otros elementos de car-item -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <p>Información sobre la empresa.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>Correo: contacto@empresa.com</p>
+                <p>Teléfono: +123 456 7890</p>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown(button) {
+            const dropdownContent = button.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Animaciones con anime.js
+        anime({
+            targets: '.header',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            easing: 'easeOutBounce'
+        });
+
+        anime({
+            targets: '.car-item',
+            translateY: [50, 0],
+            opacity: [0, 1],
+            delay: anime.stagger(200, {start: 1000}),
+            duration: 1000,
+            easing: 'easeOutExpo'
+        });
+
+        anime({
+            targets: '.footer',
+            translateY: [50, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            easing: 'easeOutExpo',
+            delay: 2000
+        });
+    </script>
+</body>
+</html>
+

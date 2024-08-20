@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toyotaprirus.css">
+    <title>Toyota pirus</title>
+   
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="font-style: none;"><img src="imagenes/Diseño sin título (3).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Modelos</a>
+                <div class="dropdown-content">
+                    <a href="toyota.html">Toyota</a>
+                    <a href="kia.html">Kia</a>
+                    
+                </div>
+            </div>
+            
+            <A href="repuestoskiapicanto.html"> Repuestos </A>
+        </nav>
+    </header>
+<hr>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="imagenes/Y2meta.app-2025 Toyota Prius Hybrid Unveiled - The Future Hybrid Revolution !!.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div>
+            <h1>Toyota Prius</h1>
+            <p>El Toyota Prius es un vehículo híbrido eléctrico producido por Toyota, conocido por su eficiencia en el consumo de combustible y bajas emisiones.</p>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h2> Eficiencia en movimiento, sin comprometer el futuro.</h2>
+        <p>Refleja la esencia del Toyota Prius, destacando su capacidad para ofrecer un rendimiento eficiente y amigable con el medio ambiente mientras se mantiene en movimiento.    </p>
+        <img src="imagenes/Kia-Picanto-Sport-0046-1024x621.jpg" alt="Ferrari SF90 Motor">
+    </section>
+<hr>
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Características Destacadas</h2>
+        <div class="feature">
+            <img src="imagenes/motor.jpg" alt="Power Icon">
+            <h3>Sistema Híbrido Synergy Drive</h3>
+            <p>Combina un motor de gasolina y un motor eléctrico para maximizar la eficiencia de combustible y minimizar las emisiones de CO₂.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/diseño interior.jpg" alt="Hybrid Icon">
+            <h3>Eficiencia de Combustible</h3>
+            <p>Ofrece un impresionante rendimiento de combustible, logrando cifras de consumo significativamente bajas en comparación con vehículos convencionales.</p>
+        </div>
+        <div class="feature">
+            <img src="imagenes/sistemas de seguirdad.jpeg" alt="Design Icon">
+            <h3>Diseño aerodinamico</h3>
+            <p>Su forma aerodinámica reduce la resistencia al viento, mejorando aún mas la eficiencia con el combustible y proporcionando una conducción suave y silenciosa. </p>
+        </div>
+    </section>
+<hr>
+    <!-- Specs Section -->
+    <section class="specs-section">
+        <h2>Especificaciones Técnicas</h2>
+        <div class="specs">
+            <div class="spec">
+                <h4>Potencia</h4>
+                <p>1000 CV</p>
+            </div>
+            <div class="spec">
+                <h4>Capacidad de Carga</h4>
+                <p>Capacidad del maletero: 255 litros (ampliable hasta 1,010 litros con los asientos traseros abatidos).</p>
+            </div>
+            <div class="spec">
+                <h4>Suspensión y Frenos</h4>
+                <p>Suspensión delantera: Independiente tipo McPherson.
+                    Suspensión trasera: Eje de torsión.
+            </div>
+            <div class="spec">
+                <h4>Motor</h4>
+                <p>V8 Turbo + 3 Motores Eléctricos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kia  Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                document.querySelector("header").style.top = "-100px";
+            } else {
+                document.querySelector("header").style.top = "0";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>
